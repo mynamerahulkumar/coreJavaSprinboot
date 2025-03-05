@@ -7,9 +7,10 @@ import java.util.stream.Collectors;
 public class MapWithLambda {
     public static void main(String[] args) {
         List<String> list= Arrays.asList("Rahul","Kumar","John");
-        List<String> lambdalist=list.stream()
+        List<String> listr=list.stream()
                 .map(name->name.toUpperCase())
                 .collect(Collectors.toList());
-        System.out.println(lambdalist);
+        System.out.println(listr);
+
     }
 }

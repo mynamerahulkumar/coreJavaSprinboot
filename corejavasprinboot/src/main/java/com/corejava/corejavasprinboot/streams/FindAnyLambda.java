@@ -10,8 +10,10 @@ public class FindAnyLambda {
     public static void main(String[] args) {
         List<String> items = Arrays.asList("apple", "banana", "apple", "orange", "banana");
 
-        Optional<String>list=items.stream().filter(name->name.startsWith("b"))
-                .findAny();
-        System.out.println(list);
+        List<String> filterItems=items.stream().
+                filter(fruit->fruit.startsWith("b"))
+                .collect(Collectors.toList());
+        System.out.println(filterItems);
+
     }
 }

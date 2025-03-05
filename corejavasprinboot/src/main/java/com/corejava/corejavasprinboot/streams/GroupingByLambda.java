@@ -11,5 +11,7 @@ public class GroupingByLambda {
         Map<String,Long> map=items.stream()
                 .collect(Collectors.groupingBy(item->item,Collectors.counting()));
         System.out.println(map);
+
+
     }
 }
